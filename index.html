@@ -15,6 +15,7 @@
             // Get request from this address: https://jidelna.gymzl.cz:8443/faces/login.jsp
             request.open('GET', 'https://jidelna.gymzl.cz:8443/faces/login.jsp', true);
             request.onload = function () {
+                console.log(request);
                 if (request.status >= 200 && request.status < 400) {
                     // Success!
                     var resp = request.responseText;
